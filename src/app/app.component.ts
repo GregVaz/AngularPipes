@@ -24,4 +24,10 @@ export class AppComponent {
     }
   };
 
+  valorPromesa  = new Promise<string>( (resolve) => {
+    setTimeout( () => {
+      resolve('Llego la data');
+    }, 3500);
+  });
+
 }
