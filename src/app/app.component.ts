@@ -35,6 +35,10 @@ export class AppComponent {
 
   idioma: string = 'fr';
 
+  videoUrl: string = 'https://www.youtube.com/embed/RmpWBTM_ZOg';
+
+  activar: boolean = true;
+
   cambiarIdioma(idioma) {
     this.idioma = idioma;
   }
