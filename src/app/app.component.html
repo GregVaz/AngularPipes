@@ -22,7 +22,53 @@
           <td> lowercase </td>
           <td>{{ nombre | lowercase }}</td>
         </tr>
+
+        <tr>
+          <td>{{ nombre }}</td>
+          <td> slce:3 </td>
+          <td>{{ nombre | slice:3 }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ nombre }}</td>
+          <td> slce:0:3 </td>
+          <td>{{ nombre | slice:0:3 }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ arreglo }}</td>
+          <td> slce:1:5 </td>
+          <td>{{ arreglo | slice:1:5 }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number </td>
+          <td>{{ PI | number }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number </td>
+          <td>{{ PI | number:'1.0-0' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number </td>
+          <td>{{ PI | number:'3.0-0' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number </td>
+          <td>{{ PI | number:'.0-2' }}</td>
+        </tr>
+
       </tbody>
     </table>
+    <!-- <ul> Uso del Slice en variable para ngFor
+      <li *ngFor="let item of arreglo | slice:5:20" >{{item}}</li>
+    </ul> -->
   </div>
 </div>
