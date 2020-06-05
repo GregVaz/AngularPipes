@@ -32,4 +32,10 @@ export class AppComponent {
 
   fecha: Date = new Date();
 
+  idioma: string = 'fr';
+
+  cambiarIdioma(idioma) {
+    this.idioma = idioma;
+  }
+
 }
